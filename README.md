@@ -18,17 +18,6 @@ The client and server are executable which are built in Ubuntu 14.04.5 LTS with 
 
     sysclt -w net.ipv4.udp_mem="98304 62914560 62914560"
 
-    sysclt -w net.core.rmem_default=62914560
-
-    sysclt -w net.core.wmem_default=62914560
-
-    sysclt -w net.core.rmem_max=62914560
-
-    sysclt -w net.core.wmem_max=62914560
-
-    sysclt -w net.ipv4.udp_rmem_min=62914560
-
-    sysclt -w net.ipv4.udp_wmem_min=62914560
 
 ## 2. Transfer Data Stream
 
