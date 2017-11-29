@@ -16,7 +16,7 @@ Instead of using the raw socket interface,we implement FillP atop UDP in the tra
 
 The client and server are executable which are built in Ubuntu 14.04.5 LTS with gcc 4.8.4, and do not need to be built again. Befor running FillP, You can configure your system as follows: 
 
-    sysctl -w net.ipv4.udp_mem="98304 268435456  268435456“
+    sysctl -w net.ipv4.udp_mem="98304 268435456 268435456“
     sysctl -w net.core.wmem_max=268435456
 
 ## 2. Transfer Data Stream
