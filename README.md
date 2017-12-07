@@ -33,8 +33,8 @@ The client and server are executable which are built in Ubuntu 14.04.5 LTS with 
 
 ## Notes:
 
-1). The recv_file_name can be set any, its purpose is to store the received data in the file; the send_file_name should exist, which is the file to be sent.  
-2). The data stream are all from client to server,if you need to distributed data from server to client, add the -m option after all commands. Meanwhile pay attention to the parameter after -f while transfer files.  
-3). Check rtt: search rtt in client_log.txt on client side.  
-4). Check retransmission packets: search Retransmit in client_log.txt on client side,the number after ‘Retransmit’ means the retransmission times. 
+1). The send_file_name should exist, which is the file to be sent.  
+2). Data streams are from client to server, if you need to send data from server to client, add the '-m' option at the end of the command. Meanwhile pay attention to the parameter '-f'.  
+3). Way to check rtt: search 'rtt' in client_log.txt on client side.  
+4). Way to check retransmissions: search 'Retransmit' in client_log.txt on client side, the number after ‘Retransmit’ means the retransmission times. 
     
