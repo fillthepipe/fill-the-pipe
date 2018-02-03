@@ -14,22 +14,22 @@ Instead of using the raw socket interface,we implement FillP atop UDP in the tra
 
 ## 1. Buffer Configuration
 
-The client and server are executable which are built in Ubuntu 14.04.5 LTS with gcc 4.8.4, and do not need to be built again. Befor running FillP, You can configure your system as follows: 
+The client and server are executable which are built in Ubuntu 14.04.5 LTS with gcc 4.8.4, and do not need to be built again. FillP does need any sysctl configuration to your system. That is, with default setting of your system, it works well. But befor running FillP in the network with bandwidth of 10 Gbps, you can extend the sending/receiving buffer as follows: 
 
     sysctl -w net.ipv4.udp_mem="98304 268435456 268435456“
     sysctl -w net.core.wmem_max=268435456
 
 ## 2. Transfer Data Stream
 
-    ./server -s server_ip -p server_port -t
+    ./server -s server_ip -p server_port
 
-    ./client -d server_ip -p server_port -t
+    ./client -d server_ip -p server_port
 
 ## 3. Transfer File
 
-    ./server -s server_ip -p server_port -t -f recv_file_name
+    ./server -s server_ip -p server_port -f recv_file_name
 
-    ./client -d server_ip -p server_port -t -f send_file_name
+    ./client -d server_ip -p server_port -f send_file_name
 
 ## Notes:
 
