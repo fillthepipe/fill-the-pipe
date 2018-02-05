@@ -34,7 +34,5 @@ The client and server are executable which are built in Ubuntu 14.04.5 LTS with 
 ## Notes:
 
 1). The send_file_name should exist, which is the file to be sent.  
-2). Data streams are from client to server, if you need to send data from server to client, add the '-m' option at the end of the command. Meanwhile pay attention to the parameter '-f'.  
-3). Way to check rtt: search 'rtt' in client_log.txt on client side.  
-4). Way to check retransmissions: search 'Retransmit' in client_log.txt on client side, the number after ‘Retransmit’ means the retransmission times. 
+2). Data streams are from client to server, if you need to send data from server to client, add the '-m' option at the end of the command.
     
