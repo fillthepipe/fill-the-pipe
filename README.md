@@ -10,7 +10,7 @@ Instead of using the raw socket interface,we implement FillP atop UDP in the tra
 
     cd client   or    cd server
 
-    export LD_LIBRARY_PATH=./  (this should be done on both server and client)
+    export LD_LIBRARY_PATH=./  (this should be done on both server and client to enable the path)
 
 ## 1. Buffer Configuration
 
