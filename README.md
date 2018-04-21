@@ -21,18 +21,11 @@ The client and server are executable which are built in Ubuntu 14.04.5 LTS with 
 
 ## 2. Transfer Data Stream
 
-    ./server -s server_ip -p server_port
+    ./server -s server_ip -p server_port -r testcase001
 
-    ./client -d server_ip -p server_port
-
-## 3. Transfer File
-
-    ./server -s server_ip -p server_port -f recv_file_name
-
-    ./client -d server_ip -p server_port -f send_file_name
+    ./client -c server_ip -p server_port -r testcase001
 
 ## Notes:
 
-1). The send_file_name should exist, which is the file to be sent.  
-2). Data streams are from client to server, if you need to send data from server to client, add the '-m' option at the end of the command.
+    Data streams are from client to server, if you need to send data from server to client, add the '-m' option at the end of the command.
     
