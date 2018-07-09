@@ -1,6 +1,6 @@
-# FillP
+# FillP2
 
-FillP is a light-weight transport protocol for massive data transmisson, aiming at improving the transfer performance by filling up the pipe while maintaining reliability and eficiency.
+FillP is a light-weight transport protocol for massive data transmssion, aiming at improving the transfer performance by filling up the pipe while maintaining reliability and efficiency.
 
 Instead of using the raw socket interface,we implement FillP atop UDP in the transport layer which does not need root privilege to be installed and changes to the existing applications.
 
@@ -14,7 +14,7 @@ Instead of using the raw socket interface,we implement FillP atop UDP in the tra
 
 ## 1. Buffer Configuration
 
-The client and server are executable which are built in Ubuntu 14.04.5 LTS with gcc 4.8.4, and do not need to be built again. FillP does need any sysctl configuration to your system. That is, with default setting of your system, it works well. But befor running FillP in the network with bandwidth of 10 Gbps, you can extend the sending/receiving buffer as follows: 
+The client and server are executable which are built in Ubuntu 14.04.5 LTS with gcc 4.8.4, and do not need to be built again. FillP does need any sysctl configuration to your system. That is, with default setting of your system, it works well. But before running FillP in the network with bandwidth of 10 Gbps, you can extend the sending/receiving buffer as follows: 
 
     sysctl -w net.ipv4.udp_mem="98304 268435456 268435456“
     sysctl -w net.core.wmem_max=268435456
@@ -25,7 +25,3 @@ The client and server are executable which are built in Ubuntu 14.04.5 LTS with 
 
     ./client -c server_ip -p server_port -r testcase001
 
-## Notes:
-
-    Data streams are from client to server, if you need to send data from server to client, add the '-m' option at the end of the command.
-    
