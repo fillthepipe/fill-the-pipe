@@ -1,6 +1,6 @@
 # About
 
-This repository provides a demo of FillP, containing the executable files of a client and a server. FillP is a UDP-based full transport protocol implementation of [TACK](https://dl.acm.org/doi/abs/10.1145/3387514.3405850). A world-wide performance evaluation of FillP can be seen at the [Pantheon](https://pantheon.stanford.edu/) from Stanford University.
+This repository provides a demo of FillP, containing the executable files of a client and a server. FillP is a UDP-based full transport protocol implementation of [TACK](https://dl.acm.org/doi/abs/10.1145/3387514.3405850). A world-wide performance evaluation of FillP can be seen at the [Pantheon](https://pantheon.stanford.edu/) from Stanford University. This demo `fillp` implements the design of the BBR congestion control without considering the congestion window limits (i.e., bytes-in-flight may exceed the 2*bdp (bandwidth and delay product)).
 
 Please cite the papers as follows (or use this [bibtex record](./doc/bibtex.txt)).
 
